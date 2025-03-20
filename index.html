@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate Company</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+      <img src="images/logo.jpg" alt="" class="logo">
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about_us.html" class="nav-link">About Us</a>
+        <a href="services/services.html" class="nav-link">Services</a>
+        <a href="contact_us.html" class="nav-link">Contact Us</a>
+      </nav>
+      <!-- زر القائمة للهاتف -->
+      <div class="menu-toggle" id="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- Hero Section -->
+      <section class="hero">
+        <img src="images/img1.jpg" alt="Featured Property" class="hero-image" />
+        <div class="hero-overlay">
+          <h1 class="hero-title">Featured Properties at Competitive Prices</h1>
+          <p class="hero-subtitle">We help you find your dream home</p>
+          <button class="btn-primary">Discover More</button>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about-section">
+        <h2 class="section-title">Who We Are</h2>
+        <p class="section-description">
+          A leading real estate company with over 15 years of experience.
+        </p>
+        <a href="about_us.html" class="btn-secondary">Get to Know Us</a>
+      </section>
+
+      <!-- Features Section -->
+      <section class="features-section">
+        <h2 class="features-title">Why Us?</h2>
+        <div class="features-grid">
+          <article class="feature-card">
+            <img
+              src="images/img3.jpg"
+              alt="Sustainability"
+              class="feature-image"
+            />
+            <h3 class="feature-title">Sustainability Analysis</h3>
+            <p class="feature-description">
+              Evaluate each property based on sustainability criteria such as
+              renewable energy use, air quality, thermal insulation, and renewable
+              materials in construction.
+            </p>
+          </article>
+          <article class="feature-card">
+            <img
+              src="images/img2.jpg"
+              alt="Cost Forecasting"
+              class="feature-image"
+            />
+            <h3 class="feature-title">Cost Forecasting</h3>
+            <p class="feature-description">
+              Calculate future costs related to energy and maintenance based on
+              the current performance of the property.
+            </p>
+          </article>
+          <article class="feature-card">
+            <img
+              src="images/img4.jpeg"
+              alt="Smart Decision"
+              class="feature-image"
+            />
+            <h3 class="feature-title">Smart Decision Simulator</h3>
+            <p class="feature-description">
+              A tool that allows users to enter their requirements (such as
+              budget, location, number of rooms, and environmental criteria) to
+              receive a list of optimal properties.
+            </p>
+          </article>
+          <article class="feature-card">
+            <img
+              src="images/img5.png"
+              alt="Community Rating"
+              class="feature-image"
+            />
+            <h3 class="feature-title">Community Rating</h3>
+            <p class="feature-description">
+              Provide information about the surrounding community, including
+              schools, public facilities, and green spaces, with rating from local
+              residents.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="projects-section">
+        <h2 class="projects-title">Our projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <img
+              src="images/img6.jpeg"
+              alt="Modern Apartment"
+              class="project-image"
+            />
+            <h3 class="project-title">A modern apartment in Riyadh</h3>
+          </article>
+          <article class="project-card">
+            <img
+              src="images/img7.jpg"
+              alt="Luxury Residential"
+              class="project-image"
+            />
+            <h3 class="project-title">Luxury residential apartments in Riyadh</h3>
+          </article>
+          <article class="project-card">
+            <img
+              src="images/img8.jpg"
+              alt="Modern Villa"
+              class="project-image"
+            />
+            <h3 class="project-title">A modern villa in Riyadh</h3>
+          </article>
+          <article class="project-card">
+            <img
+              src="images/img9.jpeg"
+              alt="Residential Apartments"
+              class="project-image"
+            />
+            <h3 class="project-title">
+              Residential apartments with a wonderful view in Al-Ahsa
+            </h3>
+          </article>
+          <article class="project-card">
+            <img
+              src="images/img10.jpg"
+              alt="Modern Apartment"
+              class="project-image"
+            />
+            <h3 class="project-title">A modern apartment in Riyadh</h3>
+          </article>
+          <article class="project-card">
+            <img
+              src="images/img11.png"
+              alt="Residential View"
+              class="project-image"
+            />
+            <h3 class="project-title">
+              Residential apartments with a wonderful view in Makkah
+            </h3>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2 class="contact-title">Contact Information</h2>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone icon"></i>
+            <div>
+              <span class="text-label">Phone</span><br />
+              <span class="line-height">+1 (555) 123-4567</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope icon"></i>
+            <div>
+              <span class="text-label">Email</span><br />
+              <span class="line-height">contact@company.com</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot icon"></i>
+            <div>
+              <span class="text-label">Address</span><br />
+              <span class="line-height">King Fahd Street</span>
+              <br />
+              <span class="line-height">Riyadh, Saudi Arabia</span>
+            </div>
+          </div>
+        </div>
+        <div class="social-media">
+          <h2 class="social-title">Follow Us</h2>
+          <div class="social-icons">
+            <i class="fa-brands fa-twitter social-icon"></i>
+            <i class="fa-brands fa-linkedin social-icon"></i>
+            <i class="fa-brands fa-facebook social-icon"></i>
+            <i class="fa-brands fa-instagram social-icon"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>All rights reserved © 2025</p>
+      </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

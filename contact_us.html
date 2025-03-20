@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us - Real Estate Company</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <!-- استدعاء مكتبة Leaflet -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <!-- Header & Navigation -->
+        <header class="header">
+            <img src="images/logo.jpg" alt="" class="logo">
+            <nav class="nav-menu" id="nav-menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about_us.html" class="nav-link">About Us</a>
+            <a href="services/services.html" class="nav-link">Services</a>
+            <a href="contact_us.html" class="nav-link">Contact Us</a>
+            </nav>
+            <!-- زر القائمة للهاتف -->
+            <div class="menu-toggle" id="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="hero">
+                <img src="images/img26.jpg" alt="Featured Property" class="hero-image" />
+                <div class="hero-overlay">
+                <h1 class="hero-title">Real Estate Company</h1>
+                <p class="hero-subtitle">Best Real Estate Services</p>
+                </div>
+            </section>
+
+            <!-- Contact Form Section -->
+            <section class="contact-form-section">
+                <h2 class="section-title">Get in Touch</h2>
+                <form class="contact-form">
+                <div class="form-group">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" placeholder="Your name" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" placeholder="your@email.com" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" class="form-textarea"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </section>
+
+            <!-- Map Section -->
+            <section class="map-section">
+                <div id="map"></div>
+            </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="footer-section">
+            
+            <div class="contact-container">
+            <div class="contact-info">
+                <h2 class="contact-title">Contact Information</h2>
+                <div class="contact-item">
+                <i class="fa-solid fa-phone icon"></i>
+                <div>
+                    <span class="text-label">Phone</span><br />
+                    <span class="line-height">+1 (555) 123-4567</span>
+                </div>
+                </div>
+                <div class="contact-item">
+                <i class="fa-solid fa-envelope icon"></i>
+                <div>
+                    <span class="text-label">Email</span><br />
+                    <span class="line-height">contact@company.com</span>
+                </div>
+                </div>
+                <div class="contact-item">
+                <i class="fa-solid fa-location-dot icon"></i>
+                <div>
+                    <span class="text-label">Address</span><br />
+                    <span class="line-height">King Fahd Street</span>
+                    <br />
+                    <span class="line-height">Riyadh, Saudi Arabia</span>
+                </div>
+                </div>
+            </div>
+            <div class="social-media">
+                <h2 class="social-title">Follow Us</h2>
+                <div class="social-icons">
+                <i class="fa-brands fa-twitter social-icon"></i>
+                <i class="fa-brands fa-linkedin social-icon"></i>
+                <i class="fa-brands fa-facebook social-icon"></i>
+                <i class="fa-brands fa-instagram social-icon"></i>
+                </div>
+            </div>
+            </div>
+
+            <div class="copyright">
+            <p>All rights reserved © 2025</p>
+            </div>
+
+        </footer>
+
+        <script>
+            // إنشاء الخريطة وتحديد الإحداثيات
+            var map = L.map('map').setView([24.7136, 46.6753], 15); // الرياض كمثال
+
+            // تحميل طبقة الخريطة من OpenStreetMap
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            // إضافة علامة (Marker) لموقع مكتب العقارات
+            L.marker([24.7136, 46.6753]).addTo(map)
+                .bindPopup("<b>Real Estate Office</b><br>Riyadh, Saudi Arabia")
+                .openPopup();
+        </script>
+
+        
+        <script src="script.js"></script>
+    </body>
+</html>
