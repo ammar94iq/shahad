@@ -1097,10 +1097,9 @@ body {
   justify-content: space-between;
   gap: 60px;
   margin-bottom: 93px;
+  padding: 0 20px;
 }
-.service_management .hero-content {
-  padding-left: 10px;
-}
+
 
 .service_management .hero-title {
   color: #1e293b;
